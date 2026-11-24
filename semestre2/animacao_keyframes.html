@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animacao_keyframes</title>
+        <style>
+            body{
+                text-align: center;
+                margin-top: 15%;
+            }
+            div{
+                display: inline-block;/*deixa um do lado do outro*/
+                margin-right: 20px;
+                cursor: pointer;/*muda a forma do mouse*/
+                transition: transform 2s;
+                animation: minhaAnimacao 5s;/*cria uma animação e fala o tempo de duração*/
+            }
+            @keyframes minhaAnimacao{
+                from{/*começo*/
+                    opacity: 0;
+                    transform: scale(0) rotate(-45deg);
+                }
+                to{/*final*/
+                    opacity: 1;
+                    transform: scale(1) rotate(0deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div><img src="Imagens/youtube.png" width="100"></div>
+        <div><img src="Imagens/facebook.png" width="100"></div>
+        <div><img src="Imagens/instagram.png" width="100"></div>
+    </body>
+</html>

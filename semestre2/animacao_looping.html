@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animacao_looping</title>
+        <style>
+            div{
+                margin-top: 25%;
+                margin-left: 35%;
+            }
+            img{
+                /*animation: rodar 5s;*/
+                animation-name: rodar;
+                animation-duration: 5s;
+                animation-iteration-count: infinite; /*deixa a animação rodar infinitamente*/
+                animation-direction: normal; /*direção da animação*/
+                animation-timing-function: linear; /*altera a velocidade da animação*/
+            }
+            @keyframes rodar{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="Imagens\cata-vento.png" width="200px">
+        </div>
+    </body>
+</html>

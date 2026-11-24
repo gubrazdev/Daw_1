@@ -1,0 +1,64 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;/*estilo da letra*/
+        margin: 0px;
+        background-color: aqua;
+}
+p{
+        color:black;
+        text-align: justify;
+        font-size: 18px;
+        text-transform: none;/*uppercase lowercase capitalize*/
+        text-indent: 10px;/*paragráfo*/
+        letter-spacing: none;/*espaçamento da letra*/
+        word-spacing: normal;/*espaçamento das palavras*/
+}  
+h1{
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 5px 5px 10px gray;/*sobra do texto*/
+        text-decoration: none;/*sublinha o texto: underline, overline*/
+        padding-top: 50px;
+}
+a:link{
+        color: white;
+        text-decoration: none;
+}
+a:hover{
+        color:lightgrey;
+        text-decoration: underline;
+}
+p#rodape{
+        color: black;
+        text-align: center;
+        font-size: 12px;
+}
+#menu{
+        background-color: black;
+        color: white;
+        padding: 20px;/*magem de dentro*/
+        text-align: center;
+        letter-spacing: 2px;
+        word-spacing: 15px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+}
+#texto{
+        width: 80%;
+        margin: 0 auto;/*margem de fora*/
+        border-style: solid; /*dotted, dashed, double*/
+        border-radius: 20px; /*arredondamento da borda*/
+        border-color: black; /*cor da borda*/
+        padding-left: 30px;
+        padding-right: 30px;
+        box-shadow: 20px 20px lightcyan;/*sombra da caixa*/
+        background-color: rgba(255, 255, 255, 0.9);
+        background-image: url(Imagens/logo-unicamp-peq.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        /*vertical: top, bottom, center*/
+        /*horizontal: left, right, center*/
+        background-size: none; /*tamanho da imagem de fundo*/
+        background-attachment: fixed; /*fundo centralizado*/
+}

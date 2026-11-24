@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Gradientes</title>
+        <style>
+            div{
+                width: 200px;
+                height: 100px;
+                color: white;
+                margin-bottom: 20px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+           .caixa-linear{
+                background: linear-gradient(to right, red, yellow);
+           
+            }
+           .caixa-radial{
+                background: radial-gradient(circle, blue, purple);
+           }
+           .botao-gradiente{
+                background: linear-gradient(to right, red, yellow);
+                border: none;
+                border-radius: 25px;
+                color: white;
+                padding: 12px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: 0 4px 10px lightgray;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="caixa-linear">Linear Gradient</div>
+        <div class="caixa-radial">Radial Gradient</div>
+        <br><br>
+        <button class="botao-gradiente">Clique Aqui</button>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Cadastro de professores</h1>
+                <hr>
+
+    <form>
+        <fieldset>
+        <legend><b><small>Dados Pessoais</small></b></legend>
+            <label>Nome:<br></label>
+                <input type="text" name="nome" id="nome" size="40" maxlength="20" minlength="5" required placeholder="Digite seu nome">
+                        <br><br>
+            <label>Idade:</label><br>
+                <input type="number" name="idade" id="idade" min="20" max="60" required>
+                            <br><br>
+            <Label>Sexo:</label><br>
+                M<input type="radio" id="sexo" name="sexo" value="F">
+                F<input type="radio" id="sexo" name="sexo" value="M">
+                                    <br><br>
+            <label>Data de nascimento:</Label><br>
+                <input type="date" id="dtnasc" name="dtnasc">
+                                    <br><br>
+            <Label>Foto<br></Label>
+                <input type="file" id="foto" name="foto" accept=".pdf">
+                                    <br><br>
+            <label>Login:<br></label>
+                <input type="text" name="nome" id="nome" size="40">
+                                    <br><br>
+            <label>Senha:<br></label>
+                <input type="password" id="senha" name="senha" size="40" maxlenght="10" minlenght="8" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b><small>Dados Profissionais</small></b></legend>
+                <label>Cargo:</label><br>
+                    <input type="text" name="cargo" id="cargo" value="professor(a)" readonly>
+                                    <br><br>
+                <label>Periodo de tabalho:</label><br>
+                    <input type="checkbox" name="periodo" id="periodo">Manhã
+                    <input type="checkbox" name="periodo" id="periodo">Tarde
+                    <input type="checkbox" name="periodo" id="periodo">Noite
+                                    <br><br>
+                <label>Cor da camisa:</label><br>
+                    <input type="color" name="cor" id="cor" name="cor" value="pink">
+                                    <br><br>                
+                <label>Quanto você se sente preparado para função:</label>
+                    0 <input type="range" name="capaz" id="capaz" max="10" min="0" value="3"> 10
+                                    <br><br>
+                <label>Curso:</label>
+                    <select>
+                        <option> </option>
+                        <option value="Des.Sistemas">Des.Sistemas</option>
+                        <option value="Agrimensura">Agrimesura</option>
+                        <option value="Qualidades">Qualidades</option>
+                        <option value="Enfermagem">Enfermagem</option>
+                        <option value="Mecânica">Mecânica</option>
+                    </select>            
+                                    <br><br>
+                <label>Disciplina preferida: </label>
+                            <br>
+                    <select size="5">
+                        <option>BD</option>
+                        <option>DAW</option>
+                        <option>Des. app. web</option>
+                        <option>Lógica de Programação</option>
+                        <option>Ling. multiplataforma</option>
+                    </select>
+                                    <br>
+                        <small>(ctrl+click) p/ várias</small>
+                            <br><br>
+                <label>Formação: </label>
+                            <br>
+                    <select>
+                        <optgroup label="Graduação">
+                            <option value="">Biológicas</option>
+                            <option>Exatas</option>
+                            <option>Engenharia</option>
+                            <option>Humanas</option>
+                            <option>Tecnologia</option>
+                        </optgroup>
+                        <optgroup label="Pós-graduação">
+                            <option>Latu-Sensu</option>
+                            <option>Mestrado</option>
+                            <option>Doutorado</option>
+                            <option>Pós-doc</option>
+                        </optgroup>
+                        
+                    </select>
+                                <br><br>
+                    <label>Conhecimento:</label>
+                    <br>
+                        <input type="text" id="conhecimento" name="conhecimento" list="lp">
+                        <datalist id="lp">
+                            <option>HTML5</option>
+                            <option>CSS3</option>
+                            <option>C++</option>
+                            <option>JavaScipt</option>
+                            <option>PHP</option>
+                            <option>C#</option>
+                            <option>Python</option>
+                            <option>react</option>
+                            <option>Ruby</option>
+                            <option>Java</option>
+                        </datalist>
+        
+        </fieldset>
+                
+        <fieldset>
+            <legend><b><small>Datas</small></b></legend>
+                <label for="dt-hr">Data e hora do cadastro: </label><br>
+                    <input type="datetime-local" name="dt=hr" id="dt-hr">
+                                    <br><br>
+                <label>Horário do cadastro:</label><br>
+                    <input type="time" name="hr-cadastro" id="hr-cadastro">
+                                    <br><br>
+                <label>Mês das férias:</label><br>
+                    <input type="month" name="férias" id="férias">
+                                    <br><br>
+                <label>Semana do saco cheio:</label><br>
+                    <input type="week" name="descanço" id="descanço">
+        </fieldset>
+
+        <fieldset>
+            <legend><b><small>Formas de contato</small></b></legend>
+                <label>Mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" 
+                    placeholder="Digite sua mensagem aqui..." maxlength="200">
+                    </textarea>
+                                    <br><br>
+                <label>Email:</label><br>
+                    <input type="email" name="email" id="email" size="40" placeholder="Digite seu email">
+                                    <br><br>
+        </fieldset>
+            <input type="reset"value="limpar">
+            <input type="submit" value="cadastrar">           
+    </form> 
+
+</body>
+</html>

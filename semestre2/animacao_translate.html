@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animacao_translate</title>
+        <style>
+            body{
+                text-align: center;
+                margin-top: 15%;
+            }
+            div{
+                display: inline-block;/*deixa um do lado do outro*/
+                margin-right: 20px;
+                cursor: pointer;/*muda a forma do mouse*/
+                transition: transform 3s;
+            }
+            div:hover{
+                /*transform: translate(0px, 20px);*/ /*move o ícone*/
+                /*transform: scale(1.5, 1.5);*/ /* aumenta o ícone*/
+                /*transform: rotate(9deg);*/ /*roda o ícone no proprio eixo*/
+                /*transform: skew(10deg, 10deg);*/ /*inclina o ícone*/
+                transform: scale(1.5, 1.5) rotate(15deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div><img src="Imagens/youtube.png" width="100"></div>
+        <div><img src="Imagens/facebook.png" width="100"></div>
+        <div><img src="Imagens/instagram.png" width="100"></div>
+    </body>
+</html>
